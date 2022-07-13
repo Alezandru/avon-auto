@@ -25,8 +25,33 @@ module.exports = {
     newLastName: 'Testersson',
     newEmailAddress: 'tester.testersson@gmail.com',
     password: 'myPass123!',
-    phoneNumber: '9159969739',
+    phoneNumberUsa: '9159969739',
     createButton: 'Create Account',
     usedEmailErrorMessage: 'The email address you entered already exists. Please Sign In or try again.',
 
+    // Find a Representative
+    findARepPageMetaTitle: 'Find A Representative by AVON',
+
+    // SignIn modal
+    firstModalText: 'Enter your email address\nor account number',
+    secondModalText: 'Welcome back, please sign in.',
+
+    // Search Bar
+    searchBarTitle: 'Search',
+    searchBarText: 'Please enter a search term.',
+
+    // Live shopping
+    liveShoppingPageMetaTitle: 'Live Shopping - An online experience to watch from any device. Shop Live',
+
+    // Become a rep
+    becomeRepMetaPageTitle: 'Avon | Make Beauty Your Business | Sell Avon | Free welcome gift with your first order + $10 Credit',
+    becomeRepGetPaidSectionTitleText: 'Get Paid to Shop and Share Beauty!',
+    becomeRepThinkBigSectionTitleText: 'Think Big, Earn Big',
+
+    // Insider blog
+    insiderBlogPageMetaTitle: 'Avon Insider Beauty Blog - Stories, Makeup Tutorials, Inspiration by AVON',
+    insiderBlogPageTitle: 'Insider Blog',
+    insiderBlogPageFirstTabText: 'Avon Insider',
+    insiderBlogPageSecondTabText: 'Beauty',
+    insiderBlogPageThirdTabText: 'Empowerment'
 }
