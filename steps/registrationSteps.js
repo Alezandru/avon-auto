@@ -1,6 +1,17 @@
-const { I } = inject();
+const { registrationPage } = inject();
 
 module.exports = {
 
-  // insert your locators and methods here
+    userIsOnRegistrationPage() {
+        registrationPage.isOpen()
+    },
+
+    userFillsRegistrationFormWithExistingAccountEmail() {
+        registrationPage.fillRegistrationFormWithExistingData()
+    },
+
+    emailErrorIsDisplayedToTheUser() {
+        registrationPage.checkEmailErrorIsDisplayed()
+    }
+
 }

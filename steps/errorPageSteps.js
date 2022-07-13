@@ -1,4 +1,4 @@
-const { I, errorPage, landingPage } = inject();
+const { errorPage, landingPage } = inject();
 
 module.exports = {
 
@@ -9,7 +9,7 @@ module.exports = {
         errorPage.contentIsLoaded()
     },
 
-    userReturnsToHomepage() {
+    userCanReturnToHomepage() {
         errorPage.returnToHomepage()
         landingPage.isLoaded()
     }

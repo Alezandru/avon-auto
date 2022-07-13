@@ -1,19 +1,26 @@
-const { I, landingPage, testData } = inject();
+const {landingPage} = inject();
 
 module.exports = {
-  landingpageIsOpen(){
-    landingPage.isOpened();
-    landingPage.isLoaded();
-  },
+    landingpageIsOpen() {
+        landingPage.isOpened();
+        landingPage.isLoaded();
+    },
 
-  pageHasCorrectTitle() {
-    landingPage.hasCorrectTitle();
-  },
+    landingpageIsLoaded() {
+        landingPage.isLoaded();
+    },
 
-  contentIsLoaded() {
-    landingPage.hasLoadedSections()
-  }
+    pageHasCorrectTitle() {
+        landingPage.hasCorrectTitle();
+    },
 
+    landingPageContentIsLoaded() {
+        landingPage.hasLoadedSections()
+    },
+
+    userNavigatesToProductPage() {
+        landingPage.navigateToProductPage()
+    }
 
 
 }
