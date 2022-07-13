@@ -20,6 +20,14 @@ exports.config = {
             waitForTimeout: 1000,
             fullPageScreenshots: false,
             uniqueScreenshotNames: true
+        },
+        Appium: {
+            app: 'https://www.avon.com',
+            platform: 'Android',
+            device: 'emulator',
+            host: '',
+            port: '',
+            desiredCapabilities: {}
         }
     },
     include: {
