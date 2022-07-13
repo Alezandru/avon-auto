@@ -2,7 +2,7 @@ const {I, testData, landingPage} = inject();
 
 module.exports = {
     sectionTitle: '//*[@id="root"]/div[2]/div/div/div/div/div/div[1]/h2',
-    goBackToHomepage: '//*[@id="root"]/div[2]/div/div/div/div/div/div[1]/div[2]/p[1]',
+    goBackToHomepage: '//*[@id="root"]/div[2]/div/div/div/div/div/div[1]/div[2]/p[1]/a',
 
     isOpened() {
         I.amOnPage(testData.errorPageUrl)
@@ -24,6 +24,6 @@ module.exports = {
 
     returnToHomepage() {
         I.click(this.goBackToHomepage)
-        I.seeElement(this.landingPage.recommendedProducts)
+        I.seeElement(landingPage.recommendedProducts)
     }
 }
