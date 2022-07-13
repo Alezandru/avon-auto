@@ -22,8 +22,6 @@ module.exports = {
     signInOverlayMessage4: '//*[@id="root"]/header/div[2]/div[2]/ul[1]/li[2]/div/svg/path[2]',
 
 
-
-
     appLogoIsDisplayed() {
         I.seeElement(this.logo)
     },
@@ -90,30 +88,16 @@ module.exports = {
     },
 
     clickBecomeARepButton() {
+        /*  without the wait, the overlay is intercepting the click
+            getting hold of the overlay xpath/css is tricky as it
+            disappears after interacting with it (time consuming)   */
+        I.wait(2)
         I.click(this.becomeARepButton)
     },
 
     clickInsiderBlogButton() {
-        /* without the wait, the overlay is intercepting the click
-           getting hold of the overlay xpath/css is tricky as it
-           disappears after interacting with it (time consuming) */
-
-        if(I.seeElement(this.signInOverlayMessage)){
-            I.click(this.signInOverlayMessage4)
-            // I.moveCursorTo(this.signInOverlayMessage)
-            I.waitForClickable(this.insiderBlogButton)
-            // I.wait(1.5)
-            I.click(this.insiderBlogButton)
-        } else {
-            I.click(this.insiderBlogButton)
-        }
-
-
-        I.seeElement(this.signInOverlayMessage)
-        I.click(this.signInOverlayMessage)
-        // I.moveCursorTo(this.signInOverlayMessage)
-        I.waitForClickable(this.insiderBlogButton)
-        // I.wait(1.5)
+        /* the same overlay issue as above */
+        I.wait(2)
         I.click(this.insiderBlogButton)
     }
 

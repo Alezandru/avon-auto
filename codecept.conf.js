@@ -21,14 +21,14 @@ exports.config = {
             fullPageScreenshots: false,
             uniqueScreenshotNames: true
         },
-        Appium: {
-            app: 'https://www.avon.com',
-            platform: 'Android',
-            device: 'emulator',
-            host: '',
-            port: '',
-            desiredCapabilities: {}
-        }
+        // Appium: {
+        //     app: 'https://www.avon.com',
+        //     platform: 'Android',
+        //     device: 'emulator',
+        //     host: '0.0.0.0',
+        //     port: '4723',
+        //     desiredCapabilities: {}
+        // }
     },
     include: {
         // Actors
